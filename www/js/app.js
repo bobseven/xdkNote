@@ -23,3 +23,10 @@
 
 
 // ...additional event handlers here...
+
+applicationDB = null;
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+  applicationDB = window.sqlitePlugin.openDatabase({name: "note.db", location: 0, createFromLocation: 1});
+}
