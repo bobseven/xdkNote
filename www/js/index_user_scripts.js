@@ -27,6 +27,8 @@
             currentNote.text = $("#note-edit-area").val();
 
             //sql code to insert
+            sqlitePlugin
+
 
             activate_page("#mainpage");
         });

@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "appDesigner",
       "projectGuid": "15d63600-1fe2-44b1-88f9-87110fa67a2e",
-      "lastModifiedDate": 1443083389074,
+      "lastModifiedDate": 1443088188287,
       "creationDate": 1442919243889
     },
     "XDK-app-designer": "true",
@@ -31,7 +31,6 @@
         "checksum": "d90b11fa",
         "dependsOn": [],
         "topLevel": true,
-        "cordovaVersion": ">=3.3.0",
         "permissions": {
           "android:name": [
             "android.permission.WRITE_EXTERNAL_STORAGE"
@@ -54,7 +53,6 @@
         "checksum": "a32414d6",
         "dependsOn": [],
         "topLevel": false,
-        "cordovaVersion": ">=3.3.0",
         "permissions": {
           "android:name": [
             "android.permission.WRITE_EXTERNAL_STORAGE"
@@ -81,7 +79,6 @@
           "cordova-plugin-file"
         ],
         "topLevel": true,
-        "cordovaVersion": ">=3.3.0",
         "permissions": {
           "android:name": [
             "android.permission.RECORD_AUDIO",
@@ -94,20 +91,20 @@
         "dependedBy": []
       },
       {
-        "id": "com.brodysoft.sqlitePlugin",
-        "name": "Brodysoft SQLitePlugin",
-        "version": "1.0.6",
+        "id": "io.litehelpers.cordova.sqlite",
+        "name": "Cordova sqlite storage plugin",
+        "version": "0.7.10",
         "originType": "cordova.io",
-        "origin": "com.brodysoft.sqlitePlugin",
+        "origin": "io.litehelpers.cordova.sqlite",
         "gitref": "",
         "paramvals": {},
-        "sourceLocation": "plugins/com.brodysoft.sqlitePlugin",
+        "sourceLocation": "plugins/io.litehelpers.cordova.sqlite",
         "selectedState": "Included",
-        "checksum": "5f313c79",
+        "checksum": "81bc77b9",
         "dependsOn": [],
         "topLevel": true,
         "cordovaVersion": ">=3.3.0",
-        "author": "Various",
+        "author": "litehelpers (various)",
         "permissions": {},
         "description": "Native interface to SQLite for PhoneGap/Cordova. Allows you to use more storage and provides more flexibility than the standard Web SQL database (window.openDatabase).",
         "data": {},
