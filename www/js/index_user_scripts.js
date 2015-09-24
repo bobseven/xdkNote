@@ -3,6 +3,8 @@
     /*
       hook up event handlers
     */
+    var currentNote = null;
+
     function register_event_handlers() {
         /*add button on header*/
         $(document).on("click", ".add-note-ref", function (evt) {
@@ -10,8 +12,8 @@
             if(!sessionStorage.currentNote)
                 sessionStorage.currentNote = {};
 
-
-
+            var id = Math.random() * 100000;
+            currentNote = new Note(id, "Note Number "+ id);
         });
 
         /*back to home button*/
@@ -22,7 +24,9 @@
         /*save button*/
         $(document).on("click", ".save-note", function (evt) {
             //open database connection
-            var noteText = $("#note-edit-area").val();
+            currentNote.text = $("#note-edit-area").val();
+
+            //sql code to insert
 
             activate_page("#mainpage");
         });

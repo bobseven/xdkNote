@@ -1,6 +1,6 @@
-function Note (id) {
+function Note (id, title) {
     this.id = id;
-    this.title = "Note Title";
+    this.title = title;
     this.text = "";
     this.imageRefs = [];
 }
